@@ -25,7 +25,7 @@ const CartItem = ({ item }) => {
     },
     cardInfo: {
       display: 'flex',
-      flexDirection: 'column'
+      alignItems: 'center'
     },
     cardName: {
       marginRight: '2rem'
