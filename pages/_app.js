@@ -6,7 +6,6 @@ import createEmotionCache from '../styles/createEmotionCache';
 
 import '../styles/globals.css';
 import theme from '../styles/theme';
-
 // Client-side cache, shared for the whole session of the user in the browser.
 const clientSideEmotionCache = createEmotionCache();
 
@@ -15,7 +14,7 @@ function MyApp(props) {
   return (
     <CacheProvider value={emotionCache}>
       <Head>
-        <title>Nextjs MUI5</title>
+        <title>My e-Shop</title>
         <meta name="viewport" content="initial-scale=1, width=device-width" />
       </Head>
       <ThemeProvider theme={theme}>
@@ -23,7 +22,6 @@ function MyApp(props) {
         <CssBaseline />
         <Component {...pageProps} />
       </ThemeProvider>
-      <Component {...pageProps} />
     </CacheProvider>
   );
 }
